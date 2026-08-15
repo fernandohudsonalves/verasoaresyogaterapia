@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Vera Soares Yogaterapia</title>
+<meta name="description" content="Artigos, práticas e reflexões sobre yogaterapia, terapias integrativas e bem-estar para o dia a dia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<script>
+/* ---- Configuração editável do banner desta página ---- */
+window.PAGE_BANNER = {
+  eyebrow: { icon: "chat", text: "Blog" },
+  title: "Reflexões para uma vida mais leve",
+  subtitle: "Artigos, práticas e histórias sobre yogaterapia, terapias integrativas e bem-estar para você aplicar no seu dia a dia."
+  // esta página não usa "photo" -> banner simples e centralizado
+};
+</script>
+<div id="page-banner"></div>
+
+<main>
+
+  <!-- ===================== FILTRO DE CATEGORIAS ===================== -->
+  <section class="category-filter-section">
+    <div class="wrap">
+      <div class="category-pills" role="group" aria-label="Filtrar por categoria">
+        <button type="button" class="active" data-filter="todos">Todos</button>
+        <button type="button" data-filter="yogaterapia">Yogaterapia</button>
+        <button type="button" data-filter="terapias">Terapias Integrativas</button>
+        <button type="button" data-filter="bem-estar">Bem-estar</button>
+        <button type="button" data-filter="autoconhecimento">Autoconhecimento</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POST EM DESTAQUE ===================== -->
+  <section class="blog-section">
+    <div class="wrap">
+      <a href="blog-post.html" class="blog-featured reveal">
+        <div class="blog-featured-media">
+          <svg viewBox="0 0 500 380" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="fGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#DCEAE5"/>
+                <stop offset="100%" stop-color="#9DB29B"/>
+              </linearGradient>
+            </defs>
+            <rect width="500" height="380" fill="url(#fGrad)"/>
+            <circle cx="150" cy="120" r="90" fill="#F3B685" opacity="0.55"/>
+            <path d="M100 380C100 260 160 190 250 170C340 190 400 260 400 380Z" fill="#16453F" opacity="0.18"/>
+          </svg>
+        </div>
+        <div class="blog-featured-body">
+          <span class="tag-pill">Yogaterapia</span>
+          <h2>Respiração consciente: o primeiro passo para acalmar a mente ansiosa</h2>
+          <p>Antes de qualquer postura ou técnica avançada, existe a respiração. Entenda por que esse é o ponto de partida da Yogaterapia e como praticar em 5 minutos por dia.</p>
+          <div class="post-meta">
+            <span>Vera Soares</span><span class="dot-sep"></span><span>12 de agosto de 2026</span><span class="dot-sep"></span><span>6 min de leitura</span>
+          </div>
+          <span class="btn btn-outline more">Ler artigo</span>
+        </div>
+      </a>
+
+      <!-- ===================== GRID DE POSTS ===================== -->
+      <div class="blog-grid">
+
+        <a href="blog-post.html" class="blog-card reveal" data-cat="terapias">
+          <div class="blog-card-media">
+            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice"><rect width="400" height="270" fill="#F1E7D3"/><circle cx="300" cy="60" r="70" fill="#E8833A" opacity="0.35"/><path d="M0 270C40 180 120 140 200 150C280 140 360 180 400 270Z" fill="#1E5A52" opacity="0.16"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag-pill">Terapias Integrativas</span>
+            <h3>Como saber se você precisa de uma terapia integrativa</h3>
+            <p>Sinais do corpo e da mente que mostram que talvez seja hora de buscar um cuidado mais integrado.</p>
+            <div class="post-meta"><span>8 min de leitura</span></div>
+            <span class="more">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a href="blog-post.html" class="blog-card reveal" data-cat="bem-estar">
+          <div class="blog-card-media">
+            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice"><rect width="400" height="270" fill="#DCEAE5"/><circle cx="90" cy="200" r="90" fill="#D9A65C" opacity="0.35"/><path d="M0 0C120 20 200 70 220 150C240 70 320 20 400 0Z" fill="#16453F" opacity="0.14"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag-pill">Bem-estar</span>
+            <h3>5 hábitos noturnos para dormir melhor sem remédios</h3>
+            <p>Pequenos ajustes na sua rotina da noite que fazem diferença real na qualidade do sono.</p>
+            <div class="post-meta"><span>5 min de leitura</span></div>
+            <span class="more">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a href="blog-post.html" class="blog-card reveal" data-cat="yogaterapia">
+          <div class="blog-card-media">
+            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice"><rect width="400" height="270" fill="#F3B685" opacity="0.3"/><rect width="400" height="270" fill="#FBF6EC"/><circle cx="330" cy="220" r="80" fill="#6F8871" opacity="0.3"/><circle cx="70" cy="60" r="50" fill="#E8833A" opacity="0.3"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag-pill">Yogaterapia</span>
+            <h3>Yogaterapia não é sinônimo de yoga: entenda a diferença</h3>
+            <p>Os objetivos, o formato das sessões e para quem cada prática é mais indicada.</p>
+            <div class="post-meta"><span>7 min de leitura</span></div>
+            <span class="more">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a href="blog-post.html" class="blog-card reveal" data-cat="autoconhecimento">
+          <div class="blog-card-media">
+            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice"><rect width="400" height="270" fill="#E4DAC6"/><path d="M0 270C80 200 140 120 200 120C260 120 320 200 400 270Z" fill="#1E5A52" opacity="0.2"/><circle cx="200" cy="70" r="40" fill="#D9A65C" opacity="0.5"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag-pill">Autoconhecimento</span>
+            <h3>Sobrecarga emocional: como identificar antes que vire esgotamento</h3>
+            <p>Os primeiros sinais de que sua carga emocional está passando do limite saudável.</p>
+            <div class="post-meta"><span>6 min de leitura</span></div>
+            <span class="more">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a href="blog-post.html" class="blog-card reveal" data-cat="terapias">
+          <div class="blog-card-media">
+            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice"><rect width="400" height="270" fill="#DCEAE5"/><circle cx="200" cy="135" r="110" fill="#F3B685" opacity="0.25"/><circle cx="200" cy="135" r="60" fill="#1E5A52" opacity="0.18"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag-pill">Terapias Integrativas</span>
+            <h3>O que esperar da sua primeira sessão de terapia integrativa</h3>
+            <p>Como funciona, o que levar e como se preparar para aproveitar melhor o atendimento.</p>
+            <div class="post-meta"><span>4 min de leitura</span></div>
+            <span class="more">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a href="blog-post.html" class="blog-card reveal" data-cat="bem-estar">
+          <div class="blog-card-media">
+            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice"><rect width="400" height="270" fill="#F1E7D3"/><path d="M0 100C100 60 300 60 400 100L400 270L0 270Z" fill="#9DB29B" opacity="0.4"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="tag-pill">Bem-estar</span>
+            <h3>Alimentação e ansiedade: existe mesmo uma conexão?</h3>
+            <p>O que a ciência e a prática clínica mostram sobre o elo entre intestino, alimentação e emoções.</p>
+            <div class="post-meta"><span>9 min de leitura</span></div>
+            <span class="more">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="load-more reveal">
+        <button type="button" class="btn btn-outline" id="loadMoreBtn">Carregar mais artigos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section>
+    <div class="cta-band reveal">
+      <svg class="cta-leaf" viewBox="0 0 100 200" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M50 0v200"/><path d="M50 30c20 5 30 15 30 30s-15 25-30 20"/><path d="M50 80c-18 4-28 14-28 28s14 24 28 20"/></svg>
+      <div class="cta-text">
+        <h2>Não encontrou o que procurava?</h2>
+        <span class="script-line">Fale comigo diretamente, sem compromisso.</span>
+        <p>Se a sua dúvida é mais pessoal, me chame no WhatsApp — respondo com carinho e atenção.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/5543999617095" target="_blank" rel="noopener" class="btn btn-orange">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.2 7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3C8.4 21.6 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3C4 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+        <a href="https://whatsagenda.com.br/vera-soares-yogaterapia" target="_blank" rel="noopener" class="cta-agendar-link">Prefere agendar direto? Clique aqui</a>
+        <div class="micro">Atendimento acolhedor e humanizado</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script>window.CURRENT_PAGE = "blog";</script>
+<script src="js/components.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>
